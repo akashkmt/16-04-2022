@@ -56,6 +56,7 @@ else{
     btn.innerText='Apply'
     btn.setAttribute('onclick','coupon()')
     var checkout=document.createElement('a');
+    checkout.setAttribute('id','checkout')
     checkout.innerText='Proceed to Checkout'
     checkout.setAttribute('href','./checkout.html')
     document.querySelector('#upperDivCart').append(inputBox,btn,checkout);
