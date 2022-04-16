@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./checkout.css">
 </head>
 <body>
     <div id="inputDiv">
@@ -17,16 +18,6 @@
         </form>
     </div>
 
-    <script>
-        document.querySelector('form').addEventListener('submit',function(){
-            event.preventDefault();
-            if(document.querySelector('#name').value==''||document.querySelector('#number').value==''||document.querySelector('#email').value==''||document.querySelector('#address').value==''){
-                alert('Please Provide All Details');
-            }
-            else{
-                window.location.href='./payment.html';
-            }
-        })
-    </script>
+    <script src="./checkout.js"></script>
 </body>
 </html>
